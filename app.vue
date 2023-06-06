@@ -8,12 +8,21 @@
 </template>
 
 <style >
+:root {  
+  --start: rgb(123, 31, 162);
+  --mid: rgb(103, 58, 183);
+  --end: rgb(244, 143, 177);
+  
+}
    html,body{
       margin:0px;
       padding:0px;
+      overflow-x: hidden;
    }
    h1{
       font-family: "Rubik", sans-serif;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
       
    }
    .full-scrn{

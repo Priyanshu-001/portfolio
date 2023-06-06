@@ -20,12 +20,7 @@
     background-position: -200% center;
   }
 }
-:root {  
-  --start: rgb(123, 31, 162);
-  --mid: rgb(103, 58, 183);
-  --end: rgb(244, 143, 177);
-  
-}
+
 .color-text{
     color: white;
     overflow-y: hidden;
