@@ -4,13 +4,13 @@ export default defineNuxtConfig({
       '@fortawesome/fontawesome-svg-core/styles.css',
         
     //   'primevue/resources/themes/saga-blue/theme.css',
-      'primevue/resources/primevue.css',
+      // 'primevue/resources/primevue.css',
       
-      'primeflex/primeflex.css'
+      // 'primeflex/primeflex.css'
     ],
-    build: {
-      transpile: ['primevue']
-    },
+    // build: {
+    //   transpile: ['primevue']
+    // },
     app:{
         head:{
             title:'Hello',
