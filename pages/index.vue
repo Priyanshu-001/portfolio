@@ -1,6 +1,7 @@
 <template>
-    <div>
+    <div class="full-scrn">
         
         <TitleCard/>
     </div>
 </template>
+
