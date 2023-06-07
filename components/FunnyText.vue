@@ -11,15 +11,7 @@
   display: inline-block;
   position: relative;
 }
-@keyframes background-pan {
-  from {
-    background-position: 0% center;
-  }
-  
-  to {
-    background-position: -200% center;
-  }
-}
+
 
 .color-text{
     color: white;

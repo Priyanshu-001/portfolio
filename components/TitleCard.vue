@@ -1,16 +1,31 @@
 <template>
     <div class="title-content">
-       <h1 > Hi, I am Priyanshu Ahuja <br>
-        I am a  <funny-text>Software Developer</funny-text></h1>
+       <h1 ><span class="iron-text"> Hi, I am Priyanshu Ahuja </span> <br>
+        <span class="iron-text">I am a </span> <funny-text>Software Developer</funny-text></h1>
         <br>
         <div class="good-container">
-        <funny-btn> contact me</funny-btn>
-        <a href="#about"><i class="fa-sharp fa-regular fa-angles-down"></i> Resume</a>
+        <funny-btn> Get in Touch</funny-btn>
+        <a href="#about">More About me</a>
         </div>
     </div>
 </template>
 
 <style scoped>
+@keyframes background-pan {
+  from {
+    background-position: 0% center;
+  }
+  
+  to {
+    background-position: -200% center;
+  }
+}
+.iron-text{
+    background: linear-gradient(180deg,#fff,hsla(0,0%,100%,.75));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color:transparent;
+}
     .title-content{
         text-align: center;
         width: 100vw;
@@ -34,19 +49,40 @@
     display: flex;
     gap:3rem;
 }
-a{  text-decoration: none;
+a{  
+    text-decoration-style: dotted;
+    text-underline-offset: 15px;
     color:inherit;
     position: relative;
+    padding:10px;
 }
 a:after{
+    display: block;
     content: "";
-    height: 3px;
+    height: 0px;
     left:0px;
     right:0px;
-    bottom:-1.2ch;
-    width:110%;
+   /* transform: translateY(110%); */
+   bottom:0;
+    width:100%;
     position:absolute;
-    background: linear-gradient(to right,var(--start),var(--mid),var(--end));
+    background-size: 200%;
+    animation: background-pan 3s linear infinite;
+    background: linear-gradient(to right,var(--end),var(--start),var(--end));
+    z-index:-1;
+    transition: all 0.2s ease-in;
+    /* display: none; */
+}
+/* a:hover::after{
+    background-position: -200% center;
+    height:100%;
+    width:100%;
+    display: block;
+    
+*/
+
+a:hover{
+    text-shadow: 8px 2px var(--start);
 }
     
     

@@ -18,7 +18,12 @@ export default defineNuxtConfig({
                { rel: 'stylesheet',
                 type: 'text/css', 
                 href:'/themeDark.css'
-                 }
+                },
+                {
+                  href:'https://fonts.googleapis.com/css?family=Roboto',
+                  rel: 'stylesheet',
+                  type: 'text/css', 
+                }
             ]
         }
     },
